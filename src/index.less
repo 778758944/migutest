@@ -1,0 +1,252 @@
+@yellowColor: #d2af83;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.container {
+    padding-top: 34px;
+    padding-bottom: 98px;
+}
+.book-wrap {
+    width: 360px;
+    margin: 0 auto;
+    background-image: url("../images/coverback.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 470px;
+    .miju-img {
+        width: 336px;
+        border-bottom-right-radius: 22px;
+    }
+}
+
+.dot-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: #cacaca;
+    border-radius: 7px;
+    margin-right: 28px;
+    transition: all 0.3s ease;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.dot-active {
+    width: 30px;
+    background: @yellowColor;
+}
+
+.book-title {
+    font-size: 45px;
+    color: #352d2b;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.book-author {
+    font-size: 30px;
+    color: #aeabaa;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.miju-tt-wrap {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.miju-tt {
+    border: 1px solid #aeabaa;
+    padding: 0 22px;
+    border-radius: 10px;
+    font-size: 28px;
+    color: #aeabaa;
+    margin-right: 40px;
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+    &::after{
+        margin-right: 0;
+    }
+}
+
+.miju-tt-active {
+    border-color: #ff6600;
+    color: #ff6600;
+}
+
+.book-price {
+    color: @yellowColor;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 34px;
+}
+
+.first-part {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.introduce-wrap, .recommend-wrap {
+    padding: 38px 34px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.text-title {
+    font-size: 38px;
+    color: #5d5755;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.text-detail {
+    color: #5d5755;
+    font-size: 35px;
+    line-height: 1.5em;
+    word-wrap: break-word;
+}
+
+.multilineEllipies {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+
+.cart-wrap {
+    height: 98px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    font-size: 28px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -3px 3px #f7f3ee;
+    z-index: 9999;
+}
+.cart {
+    height: 44px;
+    width: 172px;
+    background-image: url("../images/cart.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-right: 1px solid #f3f3f3;
+    position: relative;
+}
+
+.cart-num {
+    position: absolute;
+    min-width: 28px;
+    height: 28px;
+    background: #ff6600;
+    border-radius: 14px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 24px;
+    color: #fff;
+    left: 95px;
+    top: -5px;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+.addToSj {
+    flex: 1;
+    padding-left: 33px;
+    color: #352d2b;
+}
+
+.addToCart {
+    width: 234px;
+    height: 98px;
+    line-height: 98px;
+    text-align: center;
+    background-color: #e0c7a5;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cart-modal-wrap {
+    padding: 31px 33px 116px 33px;
+}
+
+.cart-item-wrap {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.cart-img {
+    width: 128px;
+    height: 180px;
+}
+
+.cart-item-info {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h5 {
+        font-size: 28px;
+        color: #352d2b;
+        margin-bottom: 25px;
+    }
+    h3 {
+        font-size: 45px;
+        color: #ff6600;
+        font-weight: bold;
+    }
+}
+
+.cart-item-del {
+    width: 100px;
+    height: 48px;
+    font-size: 28px;
+    color: #352d2b;
+    border: 1px solid #352d2b;
+    line-height: 48px;
+    border-radius: 5px;
+}
+
+.cart-empty {
+    font-size: 45px;
+}
+
+.text-btn {
+    font-size: 24px;
+    color: #dbccb9;
+    display: inline-block;
+    width: 100px;
+}
+
+.text-btn-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    background: url("../images/arrow.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+}
+
+.text-btn-icon-up {
+    transform: rotateZ(180deg);
+}
+
+
+
